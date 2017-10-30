@@ -1,0 +1,55 @@
+﻿<Window x:Class="Eksamen2016.MainWindow"
+        x:Name="MainForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Brætspilklubben BASTARD CAFE" 
+        Height="310.725" 
+        Width="750" 
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="SingleBorderWindow"
+        Icon="Images/Ikon.png" Closed="MainForm_Closed">
+
+    <Grid Margin="0,0,0,3">
+        <Image x:Name="image" 
+               HorizontalAlignment="Left" 
+               Height="137" 
+               Margin="10,10,0,0" 
+               VerticalAlignment="Top" 
+               Width="138" 
+               Source="Images/Ikon.png"/>
+        <Button x:Name="buttonNewReservation" Content="Edit Reservation" HorizontalAlignment="Left" Height="23" Margin="10,163,0,0" VerticalAlignment="Top" Width="138" Click="buttonNewReservation_Click"/>
+        <Button x:Name="buttonCostumerEditor" Content="Edit Kunde" HorizontalAlignment="Left" Height="23" Margin="10,205,0,0" VerticalAlignment="Top" Width="138"/>
+        <Button x:Name="buttonGameEditor" Content="Edit Spil" HorizontalAlignment="Left" Height="23" Margin="10,246,0,0" VerticalAlignment="Top" Width="138"/>
+        <GroupBox x:Name="groupBoxReservationInfo" Header="Reservations Information" HorizontalAlignment="Left" Height="265" Margin="383,10,0,0" VerticalAlignment="Top" Width="351">
+            <Grid HorizontalAlignment="Left" Height="244" Margin="0,0,-2,0" VerticalAlignment="Top" Width="341">
+                <Label x:Name="labelNavn" Content="Navn" HorizontalAlignment="Left" Height="29" Margin="10,10,0,0" VerticalAlignment="Top" Width="98"/>
+                <Label x:Name="labelNAddresse" Content="Addresse" HorizontalAlignment="Left" Height="29" Margin="10,39,0,0" VerticalAlignment="Top" Width="98"/>
+                <Label x:Name="labelPost" Content="Postnr. og By" HorizontalAlignment="Left" Height="29" Margin="10,68,0,0" VerticalAlignment="Top" Width="98"/>
+                <Label x:Name="labelTelefon" Content="Telefon" HorizontalAlignment="Left" Height="29" Margin="10,97,0,0" VerticalAlignment="Top" Width="98"/>
+                <Label x:Name="labelMail" Content="Mail" HorizontalAlignment="Left" Height="29" Margin="10,126,0,0" VerticalAlignment="Top" Width="98"/>
+                <Label x:Name="labelSpillerNavn" Content="Spiller Navn" HorizontalAlignment="Left" Height="29" Margin="10,155,0,0" VerticalAlignment="Top" Width="98"/>
+                <Label x:Name="labelResSpil" Content="Reserveret Spil" HorizontalAlignment="Left" Height="29" Margin="10,185,0,0" VerticalAlignment="Top" Width="98"/>
+                <Label x:Name="labelResBord" Content="Reserveret Bord Nr." HorizontalAlignment="Left" Height="29" Margin="10,214,0,0" VerticalAlignment="Top" Width="121" RenderTransformOrigin="0.712,10.734"/>
+                <Label x:Name="labelShowName" Content="*" HorizontalAlignment="Left" Height="30" Margin="113,10,0,0" VerticalAlignment="Top" Width="218"/>
+                <Label x:Name="labelShowAdress" Content="*" HorizontalAlignment="Left" Height="30" Margin="113,40,0,0" VerticalAlignment="Top" Width="218"/>
+                <Label x:Name="labelShowZipCity" Content="*" HorizontalAlignment="Left" Height="30" Margin="113,68,0,0" VerticalAlignment="Top" Width="218"/>
+                <Label x:Name="labelShowPhone" Content="*" HorizontalAlignment="Left" Height="30" Margin="113,98,0,0" VerticalAlignment="Top" Width="218"/>
+                <Label x:Name="labelShowMail" Content="*" HorizontalAlignment="Left" Height="30" Margin="113,126,0,0" VerticalAlignment="Top" Width="218"/>
+                <Label x:Name="labelShowGamerName" Content="*" HorizontalAlignment="Left" Height="30" Margin="113,156,0,0" VerticalAlignment="Top" Width="218"/>
+                <Label x:Name="labelShowReservationGame" Content="*" HorizontalAlignment="Left" Height="30" Margin="148,186,0,0" VerticalAlignment="Top" Width="85"/>
+                <Label x:Name="labelShowReservationTableNo" Content="*" HorizontalAlignment="Left" Height="30" Margin="148,214,0,0" VerticalAlignment="Top" Width="85"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox x:Name="groupBoxTodayReservation" Header="Dagens Reservationer" HorizontalAlignment="Left" Height="265" Margin="160,10,0,0" VerticalAlignment="Top" Width="205">
+            <Grid HorizontalAlignment="Left" 
+                  Height="240" 
+                  Margin="10,0,0,0" 
+                  VerticalAlignment="Top" 
+                  Width="177">
+                <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="238" VerticalAlignment="Top" Width="173" Margin="0,2,0,0"/>
+            </Grid>
+        </GroupBox>
+
+    </Grid>
+</Window>
