@@ -20,17 +20,17 @@ namespace Eksamen2016
     /// </summary>
     public partial class UCOverviewRes : UserControl
     {
-        public Window callWindow;
+        public UserControl callUC;
         public UCOverviewRes(object from)
         {
             InitializeComponent();
-            callWindow = (Window)from;
+            callUC = (UserControl)from;
 
         }
-        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
-        {
-            callWindow.Show();
-        }
+        //private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        //{
+        //    //callUC.Show();
+        //}
 
         private void textBoxSoeg_TextChanged(object sender, TextChangedEventArgs e)
         {
