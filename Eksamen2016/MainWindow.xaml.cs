@@ -21,6 +21,7 @@ namespace Eksamen2016
     public partial class MainWindow : Window
     {
         public UserControl uCMenu;
+        public UserControl uCOverviewRes;
         
         public MainWindow()
         {

@@ -21,17 +21,27 @@ namespace Eksamen2016
     public partial class UCMenu : UserControl
     {
         public Window callWindow;
+
         public UCMenu(object w)
         {
             InitializeComponent();
             callWindow = (Window)w;
         }
-        private void buttonReservation_Click(object sender, RoutedEventArgs e)
+
+        private void ButtonReservations_Click(object sender, RoutedEventArgs e)
         {
-            //ReservationWindow RW = new ReservationWindow(this);
-            //this.Hide();
-            //RW.Show();
+            //callWindow.uCOverviewRes = new UCOverviewRes(callWindow);
+            //callWindow.UCCenter.Content = callWindow.uCOverviewRes;
         }
 
+        private void ButtonCustomers_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ButtonGames_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

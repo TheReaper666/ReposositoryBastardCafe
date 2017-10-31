@@ -10,25 +10,26 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Eksamen2016
 {
     /// <summary>
-    /// Interaction logic for ReservationWindow.xaml
+    /// Interaction logic for UCOverviewRes.xaml
     /// </summary>
-    public partial class ReservationWindow : Window
+    public partial class UCOverviewRes : UserControl
     {
-        Window winFrom;
-        public ReservationWindow(Window from)
+        public Window callWindow;
+        public UCOverviewRes(object from)
         {
             InitializeComponent();
-            winFrom = from;
-        }
+            callWindow = (Window)from;
 
+        }
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            winFrom.Show();
+            callWindow.Show();
         }
 
         private void textBoxSoeg_TextChanged(object sender, TextChangedEventArgs e)
@@ -40,7 +41,7 @@ namespace Eksamen2016
         {
             textBoxSoeg.Text = "";
             groupBoxTodayReservation.Header = "Reservationer knyttet til dagen";
-            labelResShowDato.Content = DatePickerResDato.SelectedDate.ToString();
+            //labelResShowDato.Content = DatePickerResDato.SelectedDate.ToString();
         }
     }
 }
