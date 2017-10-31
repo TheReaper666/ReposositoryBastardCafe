@@ -16,15 +16,15 @@ using System.Windows.Shapes;
 namespace Eksamen2016
 {
     /// <summary>
-    /// Interaction logic for UCOverviewRes.xaml
+    /// Interaction logic for UcOverviewRes.xaml
     /// </summary>
-    public partial class UCOverviewRes : UserControl
+    public partial class UcOverviewRes : UserControl
     {
-        public UserControl callUC;
-        public UCOverviewRes(object from)
+        public UserControl ucCenter;
+        public UcOverviewRes(object from)
         {
             InitializeComponent();
-            callUC = (UserControl)from;
+            ucCenter = (UserControl)from;
 
         }
         //private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)

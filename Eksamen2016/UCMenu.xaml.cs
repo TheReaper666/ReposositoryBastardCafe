@@ -16,33 +16,33 @@ using System.Windows.Shapes;
 namespace Eksamen2016
 {
     /// <summary>
-    /// Interaction logic for UCMenu.xaml
+    /// Interaction logic for UcMenu.xaml
     /// </summary>
-    public partial class UCMenu : UserControl
+    public partial class UcMenu : UserControl
     {
-        public UserControl uCCenter;
-        public UCOverviewRes ucOverviewRes;
+        public UserControl ucCenter;
+        public UcOverviewRes ucOverviewRes;
 
-        public UCMenu(object ucr)
+        public UcMenu(object ucr)
         {
             InitializeComponent();
-            uCCenter = (UserControl)ucr;
-            ucOverviewRes = new UCOverviewRes(this);
+            ucCenter = (UserControl)ucr;
+            ucOverviewRes = new UcOverviewRes(this);
         }
 
         private void ButtonReservations_Click(object sender, RoutedEventArgs e)
         {
-            uCCenter.Content = ucOverviewRes;
+            ucCenter.Content = ucOverviewRes;
         }
 
         private void ButtonCustomers_Click(object sender, RoutedEventArgs e)
         {
-            uCCenter.Content = ucOverviewRes;
+            ucCenter.Content = ucOverviewRes;
         }
 
         private void ButtonGames_Click(object sender, RoutedEventArgs e)
         {
-            uCCenter.Content = ucOverviewRes;
+            ucCenter.Content = ucOverviewRes;
         }
     }
 }

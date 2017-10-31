@@ -55,11 +55,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="UCMenu.xaml.cs">
-      <DependentUpon>UCMenu.xaml</DependentUpon>
+    <Compile Include="UcMenu.xaml.cs">
+      <DependentUpon>UcMenu.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UCOverviewRes.xaml.cs">
-      <DependentUpon>UCOverviewRes.xaml</DependentUpon>
+    <Compile Include="UcOverviewRes.xaml.cs">
+      <DependentUpon>UcOverviewRes.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -73,11 +73,11 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="UCMenu.xaml">
+    <Page Include="UcMenu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UCOverviewRes.xaml">
+    <Page Include="UcOverviewRes.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

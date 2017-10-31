@@ -20,14 +20,14 @@ namespace Eksamen2016
     /// </summary>
     public partial class MainWindow : Window
     {
-        public UserControl uCMenu = null;
-        public UserControl uCOverviewRes = null;
+        public UcMenu ucMenu = null;
+        public UcOverviewRes ucOverviewRes = null;
         
         public MainWindow()
         {
             InitializeComponent();
-            uCMenu = new UCMenu(UCCenter);
-            this.UCLeft.Content = uCMenu;
+            ucMenu = new UcMenu(UCCenter);
+            this.UCLeft.Content = ucMenu;
         }
 
 
