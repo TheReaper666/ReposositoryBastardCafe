@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eksamen2016", "Eksamen2016\Eksamen2016.csproj", "{5E21BB6D-F8AF-4944-A0AF-7C033C6876E4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BastardCafe.GUI", "Eksamen2016\BastardCafe.GUI.csproj", "{5E21BB6D-F8AF-4944-A0AF-7C033C6876E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BastardCafe.Appbizz", "BastardCafe.Appbizz\BastardCafe.Appbizz.csproj", "{81E4779B-E969-47BD-8954-2028B3CCDDF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BastardCafe.IO", "BastardCafe.IO\BastardCafe.IO.csproj", "{835B2648-F457-4F91-943F-9D2198D5BCA1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{5E21BB6D-F8AF-4944-A0AF-7C033C6876E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E21BB6D-F8AF-4944-A0AF-7C033C6876E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E21BB6D-F8AF-4944-A0AF-7C033C6876E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81E4779B-E969-47BD-8954-2028B3CCDDF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81E4779B-E969-47BD-8954-2028B3CCDDF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81E4779B-E969-47BD-8954-2028B3CCDDF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81E4779B-E969-47BD-8954-2028B3CCDDF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{835B2648-F457-4F91-943F-9D2198D5BCA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{835B2648-F457-4F91-943F-9D2198D5BCA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{835B2648-F457-4F91-943F-9D2198D5BCA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{835B2648-F457-4F91-943F-9D2198D5BCA1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
