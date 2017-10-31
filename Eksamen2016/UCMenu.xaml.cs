@@ -16,23 +16,22 @@ using System.Windows.Shapes;
 namespace Eksamen2016
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for UCMenu.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class UCMenu : UserControl
     {
-        public UserControl uCMenu;
-        
-        public MainWindow()
+        public Window callWindow;
+        public UCMenu(object w)
         {
             InitializeComponent();
-            uCMenu = new UCMenu(this);
-            this.UCLeft.Content = uCMenu;
+            callWindow = (Window)w;
         }
-
-
-        private void MainForm_Closed(object sender, EventArgs e)
+        private void buttonReservation_Click(object sender, RoutedEventArgs e)
         {
-            for (int intCounter = App.Current.Windows.Count - 1; intCounter >= 0; intCounter--) App.Current.Windows[intCounter].Close();
+            //ReservationWindow RW = new ReservationWindow(this);
+            //this.Hide();
+            //RW.Show();
         }
+
     }
 }
