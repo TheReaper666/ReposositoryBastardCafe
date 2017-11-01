@@ -9,32 +9,32 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="30*" />
-            <RowDefinition Height="220*" />
-            <RowDefinition Height="20*" />
+            <RowDefinition Height="220*"/>
+            <RowDefinition Height="20*"/>
         </Grid.RowDefinitions>
         <Grid Grid.Row="0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition  Width="3.2*" />
-                <ColumnDefinition  Width="8*" />
+                <ColumnDefinition  Width="8*"/>
             </Grid.ColumnDefinitions>
             <Label Content="Søgning:"
                    Grid.Column="0"
                    Grid.Row="0" />
-            <TextBox x:Name="textBoxSøgKunder"
+            <TextBox x:Name="textBoxSøgeFeltKunder"
                      Grid.Column="1"
                      Grid.Row="0"
                      Margin="10,0,10,0"
                      VerticalAlignment="Center"
-                     TextChanged="TextBoxSøgKunder_TextChanged" />
+                     TextChanged="TextBoxSøgeFeltKunder_TextChanged" />
         </Grid>
-        <DataGrid Grid.Row="1"  x:Name="dataGridKundeListe"
+        <DataGrid Grid.Row="1" x:Name="dataGridKundeListe_SelectionChanged"
                   SelectionChanged="DataGridKundeListe_SelectionChanged" />
         <Button Grid.Row="2"
                 x:Name="btnOpretKunde"
                 Content="Opret Kunde"
                 Height="19"
                 Margin="0,1,0,0"
-                Width="71"
-                Click="BtnOpretKunde_Click" />
+                Width="60"
+                Click="BtnOpretSpil_Click" />
     </Grid>
 </UserControl>
