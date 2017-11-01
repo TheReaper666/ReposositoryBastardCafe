@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace Eksamen2016
 {
     /// <summary>
-    /// Interaction logic for ucOverWievRes.xaml
+    /// Interaction logic for UcOverWievRes.xaml
     /// </summary>
-    public partial class ucOverWievRes : UserControl
+    public partial class UcOverWievRes : UserControl
     {
-        public ucOverWievRes()
+        public UcOverWievRes()
         {
             InitializeComponent();
         }
