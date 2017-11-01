@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="Eksamen2016.UcOverviewSpil"
+﻿<UserControl x:Class="Eksamen2016.UcOverviewKunder"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -9,32 +9,32 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="30*" />
-            <RowDefinition Height="220*"/>
-            <RowDefinition Height="20*"/>
+            <RowDefinition Height="220*" />
+            <RowDefinition Height="20*" />
         </Grid.RowDefinitions>
         <Grid Grid.Row="0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition  Width="3.2*" />
-                <ColumnDefinition  Width="8*"/>
+                <ColumnDefinition  Width="8*" />
             </Grid.ColumnDefinitions>
             <Label Content="Søgning:"
                    Grid.Column="0"
                    Grid.Row="0" />
-            <TextBox x:Name="textBoxSøgeFeltSpil"
+            <TextBox x:Name="textBoxSøgKunder"
                      Grid.Column="1"
                      Grid.Row="0"
                      Margin="10,0,10,0"
                      VerticalAlignment="Center"
-                     TextChanged="TextBoxSøgeFeltSpil_TextChanged" />
+                     TextChanged="TextBoxSøgKunder_TextChanged" />
         </Grid>
-        <DataGrid Grid.Row="1" x:Name="spilGrid"
-                  SelectionChanged="SpilGrid_SelectionChanged" />
+        <DataGrid Grid.Row="1"  x:Name="dataGridKundeListe"
+                  SelectionChanged="DataGridKundeListe_SelectionChanged" />
         <Button Grid.Row="2"
-                x:Name="btnOpretSpil"
-                Content="OpretSpil"
+                x:Name="btnOpretKunde"
+                Content="Opret Kunde"
                 Height="19"
                 Margin="0,1,0,0"
-                Width="60"
-                Click="BtnOpretSpil_Click" />
+                Width="71"
+                Click="BtnOpretKunde_Click" />
     </Grid>
 </UserControl>

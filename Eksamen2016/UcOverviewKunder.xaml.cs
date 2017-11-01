@@ -16,26 +16,26 @@ using System.Windows.Shapes;
 namespace Eksamen2016
 {
     /// <summary>
-    /// Interaction logic for ucOverWievRes.xaml
+    /// Interaction logic for UcOverviewKunder.xaml
     /// </summary>
-    public partial class ucOverWievRes : UserControl
+    public partial class UcOverviewKunder : UserControl
     {
-        public ucOverWievRes()
+        public UcOverviewKunder()
         {
             InitializeComponent();
         }
 
-        private void btnOpretRes(object sender, RoutedEventArgs e)
+        private void BtnOpretKunde_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void DataGridOVR_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void TextBoxSøgKunder_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }
 
-        private void TextboxSøgefelt_TextChanged(object sender, TextChangedEventArgs e)
+        private void DataGridKundeListe_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
         }

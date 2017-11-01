@@ -24,5 +24,20 @@ namespace Eksamen2016
         {
             InitializeComponent();
         }
+
+        private void TextBoxSøgeFeltSpil_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void SpilGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void BtnOpretSpil_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

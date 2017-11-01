@@ -21,13 +21,13 @@ namespace Eksamen2016
     public partial class UcMenu : UserControl
     {
         public UserControl ucCenter;
-        public UcOverviewRes ucOverviewRes;
+        public ucOverWievRes ucOverviewRes;
 
         public UcMenu(object ucr)
         {
             InitializeComponent();
             ucCenter = (UserControl)ucr;
-            ucOverviewRes = new UcOverviewRes(this);
+            ucOverviewRes = new ucOverWievRes();
         }
 
         private void ButtonReservations_Click(object sender, RoutedEventArgs e)

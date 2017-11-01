@@ -29,5 +29,15 @@ namespace Eksamen2016
         {
 
         }
+
+        private void DataGridOVR_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void TextboxSøgefelt_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
