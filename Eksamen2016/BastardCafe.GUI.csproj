@@ -63,6 +63,9 @@
     <Compile Include="UcDetailsKunderOpret.xaml.cs">
       <DependentUpon>UcDetailsKunderOpret.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UcDetailsResOpdater.xaml.cs">
+      <DependentUpon>UcDetailsResOpdater.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UcDetailsResOpret.xaml.cs">
       <DependentUpon>UcDetailsResOpret.xaml</DependentUpon>
     </Compile>
@@ -100,6 +103,10 @@
     <Page Include="UcDetailsKunderOpret.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UcDetailsResOpdater.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="UcDetailsResOpret.xaml">
       <SubType>Designer</SubType>
