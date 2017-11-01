@@ -25,8 +25,7 @@ namespace Eksamen2016
         public MainWindow()
         {
             InitializeComponent();
-            uCMenu = new UCMenu(this);
-            this.UCLeft.Content = uCMenu;
+            UCLeft.Content = uCMenu;
         }
 
 

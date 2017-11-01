@@ -58,8 +58,8 @@
     <Compile Include="ReservationWindow.xaml.cs">
       <DependentUpon>ReservationWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UCMenu.xaml.cs">
-      <DependentUpon>UCMenu.xaml</DependentUpon>
+    <Compile Include="ucOverWievRes.xaml.cs">
+      <DependentUpon>ucOverWievRes.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -76,6 +76,10 @@
     <Page Include="ReservationWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ucOverWievRes.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>
