@@ -29,5 +29,15 @@ namespace Eksamen2016
         {
             radioBtnAktiv.IsChecked = true;
         }
+
+        private void TextBoxSpilNavn_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void BtnOpret_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
