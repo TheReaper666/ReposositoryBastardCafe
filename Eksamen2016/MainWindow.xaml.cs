@@ -21,7 +21,7 @@ namespace Eksamen2016
     public partial class MainWindow : Window
     {
         public UcMenu ucMenu = null;
-        public UcOverviewRes ucOverviewRes = null;
+        public ucOverWievRes ucOverviewRes = null;
         
         public MainWindow()
         {
