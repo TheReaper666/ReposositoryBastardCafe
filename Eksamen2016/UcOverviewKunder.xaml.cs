@@ -25,12 +25,12 @@ namespace Eksamen2016
             InitializeComponent();
         }
 
-        private void BtnOpretKunde_Click(object sender, RoutedEventArgs e)
+        private void BtnOpretSpil_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void TextBoxSøgKunder_TextChanged(object sender, TextChangedEventArgs e)
+        private void TextBoxSøgeFeltKunder_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }
