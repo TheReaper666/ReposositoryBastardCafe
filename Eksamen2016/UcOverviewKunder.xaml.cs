@@ -16,26 +16,26 @@ using System.Windows.Shapes;
 namespace Eksamen2016
 {
     /// <summary>
-    /// Interaction logic for UcOverviewSpil.xaml
+    /// Interaction logic for UcOverviewKunder.xaml
     /// </summary>
-    public partial class UcOverviewSpil : UserControl
+    public partial class UcOverviewKunder : UserControl
     {
-        public UcOverviewSpil()
+        public UcOverviewKunder()
         {
             InitializeComponent();
         }
 
-        private void TextBoxSøgeFeltSpil_TextChanged(object sender, TextChangedEventArgs e)
+        private void BtnOpretKunde_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void SpilGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void TextBoxSøgKunder_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }
 
-        private void BtnOpretSpil_Click(object sender, RoutedEventArgs e)
+        private void DataGridKundeListe_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
         }
