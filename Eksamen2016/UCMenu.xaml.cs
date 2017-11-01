@@ -22,7 +22,7 @@ namespace Eksamen2016
     {
         private UserControl ucCenter;
         private UserControl ucRight;
-        private UcOverwievRes ucOverviewRes;
+        private UcOverviewRes ucOverviewRes;
         private UcOverviewKunder ucOverviewKunder;
         private UcOverviewSpil ucOverviewSpil;
 
@@ -31,7 +31,7 @@ namespace Eksamen2016
             InitializeComponent();
             ucCenter = (UserControl)ucc;
             ucRight = (UserControl)ucr;
-            ucOverviewRes = new UcOverwievRes(ucr);
+            ucOverviewRes = new UcOverviewRes(ucr);
             ucOverviewKunder = new UcOverviewKunder(ucr);
             ucOverviewSpil = new UcOverviewSpil(ucr);
         }
