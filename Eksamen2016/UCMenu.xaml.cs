@@ -21,13 +21,15 @@ namespace Eksamen2016
     public partial class UcMenu : UserControl
     {
         public UserControl ucCenter;
-        public ucOverWievRes ucOverviewRes;
+        public UcOverWievRes ucOverviewRes;
+        public UcOverviewKunder ucOverviewKunder;
+        public UcOverviewSpil ucOverviewSpil;
 
         public UcMenu(object ucr)
         {
             InitializeComponent();
             ucCenter = (UserControl)ucr;
-            ucOverviewRes = new ucOverWievRes();
+            ucOverviewRes = new UcOverWievRes();
         }
 
         private void ButtonReservations_Click(object sender, RoutedEventArgs e)
@@ -37,12 +39,12 @@ namespace Eksamen2016
 
         private void ButtonCustomers_Click(object sender, RoutedEventArgs e)
         {
-            ucCenter.Content = ucOverviewRes;
+            ucCenter.Content = ucOverviewKunder;
         }
 
         private void ButtonGames_Click(object sender, RoutedEventArgs e)
         {
-            ucCenter.Content = ucOverviewRes;
+            ucCenter.Content = ucOverviewSpil;
         }
     }
 }

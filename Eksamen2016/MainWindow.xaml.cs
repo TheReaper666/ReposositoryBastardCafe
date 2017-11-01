@@ -21,8 +21,10 @@ namespace Eksamen2016
     public partial class MainWindow : Window
     {
         public UcMenu ucMenu = null;
-        public ucOverWievRes ucOverviewRes = null;
-        
+        public UcOverWievRes ucOverviewRes = null;
+        public UcOverviewKunder ucOverviewKunder = null;
+        public UcOverviewSpil ucOverviewSpil = null;
+
         public MainWindow()
         {
             InitializeComponent();
