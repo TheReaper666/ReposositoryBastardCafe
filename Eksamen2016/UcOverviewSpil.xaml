@@ -5,12 +5,12 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Eksamen2016"
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="223">
+             d:DesignHeight="270" d:DesignWidth="223">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="30" />
-            <RowDefinition Height="240"/>
-            <RowDefinition />
+            <RowDefinition Height="30*" />
+            <RowDefinition Height="220*"/>
+            <RowDefinition Height="20*"/>
         </Grid.RowDefinitions>
         <Grid Grid.Row="0">
             <Grid.ColumnDefinitions>
