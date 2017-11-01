@@ -35,6 +35,6 @@
                 Height="19"
                 Margin="0,1,0,0"
                 Width="60"
-                Click="BtnOpretSpil_Click" />
+                Click="BtnOpretKunde_Click" />
     </Grid>
 </UserControl>
