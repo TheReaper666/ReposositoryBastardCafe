@@ -16,32 +16,18 @@ using System.Windows.Shapes;
 namespace Eksamen2016
 {
     /// <summary>
-    /// Interaction logic for UcOverviewRes.xaml
+    /// Interaction logic for ucOverWievRes.xaml
     /// </summary>
-    public partial class UcOverviewRes : UserControl
+    public partial class ucOverWievRes : UserControl
     {
-        public UserControl ucCenter;
-        public UcOverviewRes(object from)
+        public ucOverWievRes()
         {
             InitializeComponent();
-            ucCenter = (UserControl)from;
-
-        }
-        //private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
-        //{
-        //    //callUC.Show();
-        //}
-
-        private void textBoxSoeg_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            groupBoxTodayReservation.Header = "Resultat af søgning";
         }
 
-        private void DatePicker_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
+        private void btnOpretRes(object sender, RoutedEventArgs e)
         {
-            textBoxSoeg.Text = "";
-            groupBoxTodayReservation.Header = "Reservationer knyttet til dagen";
-            //labelResShowDato.Content = DatePickerResDato.SelectedDate.ToString();
+
         }
     }
 }
