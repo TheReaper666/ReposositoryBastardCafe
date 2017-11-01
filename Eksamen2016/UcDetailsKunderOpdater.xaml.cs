@@ -16,16 +16,16 @@ using System.Windows.Shapes;
 namespace Eksamen2016
 {
     /// <summary>
-    /// Interaction logic for UcDetailsKunderOpret.xaml
+    /// Interaction logic for UcDetailsKunderOpdater.xaml
     /// </summary>
-    public partial class UcDetailsKunderOpret : UserControl
+    public partial class UcDetailsKunderOpdater : UserControl
     {
-        public UcDetailsKunderOpret()
+        public UcDetailsKunderOpdater()
         {
             InitializeComponent();
         }
 
-        private void ButtonOpretKunde_Click(object sender, RoutedEventArgs e)
+        private void ButtonOpdaterKunde_Click(object sender, RoutedEventArgs e)
         {
 
         }
