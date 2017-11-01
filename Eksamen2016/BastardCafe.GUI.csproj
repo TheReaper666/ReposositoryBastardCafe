@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="UcDetailsKunder.xaml.cs">
+      <DependentUpon>UcDetailsKunder.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UcDetailsResOpret.xaml.cs">
       <DependentUpon>UcDetailsResOpret.xaml</DependentUpon>
     </Compile>
@@ -82,6 +85,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="UcDetailsKunder.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UcDetailsResOpret.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

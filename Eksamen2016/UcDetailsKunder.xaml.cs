@@ -16,26 +16,21 @@ using System.Windows.Shapes;
 namespace Eksamen2016
 {
     /// <summary>
-    /// Interaction logic for UcDetailsResOpret.xaml
+    /// Interaction logic for UcDetailsKunder.xaml
     /// </summary>
-    public partial class UcDetailsResOpret : UserControl
+    public partial class UcDetailsKunder : UserControl
     {
-        public UcDetailsResOpret()
+        public UcDetailsKunder()
         {
             InitializeComponent();
         }
 
-        private void DataGridCostumerList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void ButtonOpdaterKunde_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
         private void ButtonOpretKunde_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void ButtonOpretReservation_Click(object sender, RoutedEventArgs e)
         {
 
         }

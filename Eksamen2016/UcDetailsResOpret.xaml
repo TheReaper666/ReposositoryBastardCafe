@@ -32,7 +32,7 @@
                  <DataGrid x:Name="dataGridCostumerList" Height="91" HorizontalAlignment="Left" Margin="0,0" VerticalAlignment="Top" Width="356" SelectionChanged="DataGridCostumerList_SelectionChanged"/>
             </Grid>
         </GroupBox>
-        <Button x:Name="buttonCreateCostumer" Grid.Column="0" Grid.Row="5" Content="Opret Kunde" HorizontalAlignment="Center" Margin="3,3" VerticalAlignment="Top" Width="120" Click="ButtonCreateCostumer_Click"/>
-        <Button x:Name="buttonCreateReservation" Grid.Column="1" Grid.Row="5" Content="Opret Reservation" HorizontalAlignment="Center" Margin="3,3" VerticalAlignment="Top" Width="120" Click="ButtonCreateReservation_Click"/>
+        <Button x:Name="buttonOpretKunde" Grid.Column="0" Grid.Row="5" Content="Opret Kunde" HorizontalAlignment="Center" Margin="3,3" VerticalAlignment="Top" Width="120" Click="ButtonOpretKunde_Click"/>
+        <Button x:Name="buttonOpretReservation" Grid.Column="1" Grid.Row="5" Content="Opret Reservation" HorizontalAlignment="Center" Margin="3,3" VerticalAlignment="Top" Width="120" Click="ButtonOpretReservation_Click"/>
     </Grid>
 </UserControl>
