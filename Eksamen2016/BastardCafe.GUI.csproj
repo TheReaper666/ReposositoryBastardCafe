@@ -57,11 +57,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="UcDetailsResOpdater.xaml.cs">
-      <DependentUpon>UcDetailsResOpdater.xaml</DependentUpon>
+    <Compile Include="UcDetailsKunder.xaml.cs">
+      <DependentUpon>UcDetailsKunder.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UcDetailsResOpret.xaml.cs">
+      <DependentUpon>UcDetailsResOpret.xaml</DependentUpon>
     </Compile>
     <Compile Include="UcMenu.xaml.cs">
       <DependentUpon>UcMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UcOverviewKunder.xaml.cs">
+      <DependentUpon>UcOverviewKunder.xaml</DependentUpon>
     </Compile>
     <Compile Include="UcOverViewRes.xaml.cs">
       <DependentUpon>UcOverViewRes.xaml</DependentUpon>
@@ -81,11 +87,19 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="UcDetailsResOpdater.xaml">
+    <Page Include="UcDetailsKunder.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UcDetailsResOpret.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UcMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UcOverviewKunder.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

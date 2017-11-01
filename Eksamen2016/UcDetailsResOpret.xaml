@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="Eksamen2016.UcDetailsResOpret"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Eksamen2016"
+             mc:Ignorable="d" 
+             d:DesignHeight="270" d:DesignWidth="373">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="4*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <Label x:Name="labelDato" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Width="367"  Content="" HorizontalAlignment="Left" Margin="3,3" VerticalAlignment="Top"/>
+        <ComboBox x:Name="comboBoxTableNumber" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="3,3" VerticalAlignment="Top" Width="367"/>
+        <ComboBox x:Name="comboBoxGameName" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="3,3" VerticalAlignment="Top" Width="367"/>
+        <TextBox x:Name="textBoxSearchFieldCostumer" Text="" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2" Height="24" HorizontalAlignment="Left" Margin="3,3" VerticalAlignment="Top" Width="367"/>
+        <GroupBox x:Name="groupBoxCostumerList" Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="2" Header="Kunder" HorizontalAlignment="Left" Height="113" Margin="3,3" VerticalAlignment="Top" Width="367">
+            <Grid HorizontalAlignment="Left" 
+                  Height="93" 
+                  Margin="0,0" 
+                  VerticalAlignment="Top" 
+                  Width="358">
+                 <DataGrid x:Name="dataGridCostumerList" Height="91" HorizontalAlignment="Left" Margin="0,0" VerticalAlignment="Top" Width="356" SelectionChanged="DataGridCostumerList_SelectionChanged"/>
+            </Grid>
+        </GroupBox>
+        <Button x:Name="buttonOpretKunde" Grid.Column="0" Grid.Row="5" Content="Opret Kunde" HorizontalAlignment="Center" Margin="3,3" VerticalAlignment="Top" Width="120" Click="ButtonOpretKunde_Click"/>
+        <Button x:Name="buttonOpretReservation" Grid.Column="1" Grid.Row="5" Content="Opret Reservation" HorizontalAlignment="Center" Margin="3,3" VerticalAlignment="Top" Width="120" Click="ButtonOpretReservation_Click"/>
+    </Grid>
+</UserControl>

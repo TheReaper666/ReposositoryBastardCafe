@@ -16,24 +16,28 @@ using System.Windows.Shapes;
 namespace Eksamen2016
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for UcOverviewKunder.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class UcOverviewKunder : UserControl
     {
-        public UcMenu ucMenu = null;
-        public ucOverWievRes ucOverviewRes = null;
-        
-        public MainWindow()
+        public UcOverviewKunder()
         {
             InitializeComponent();
-            ucMenu = new UcMenu(UCCenter);
-            this.UCLeft.Content = ucMenu;
         }
 
-
-        private void MainForm_Closed(object sender, EventArgs e)
+        private void BtnOpretKunde_Click(object sender, RoutedEventArgs e)
         {
-            for (int intCounter = App.Current.Windows.Count - 1; intCounter >= 0; intCounter--) App.Current.Windows[intCounter].Close();
+
+        }
+
+        private void TextBoxSøgKunder_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void DataGridKundeListe_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }
