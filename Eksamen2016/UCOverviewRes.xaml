@@ -14,7 +14,7 @@
             <RowDefinition Height="4*" />
             <RowDefinition Height="1*" />
         </Grid.RowDefinitions>
-        <Grid Grid.Row="0">
+        <Grid Grid.Row="0" Background="Blue">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="3.2*"/>
                 <ColumnDefinition Width="8*" />
@@ -23,21 +23,34 @@
                     Content="Søgning:"
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center" />
-             
+            <TextBox Grid.Column="1"
+                     x:Name="TextboxSøgefelt" 
+                     Margin="10,12,10,12"
+                     TextChanged="TextboxSøgefelt_TextChanged" />
+
         </Grid>
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="3.2*" />
                 <ColumnDefinition Width="8*" />
             </Grid.ColumnDefinitions>
-            
+            <Label Grid.Column="0"
+                   Content="Dato:"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center" />
+            <DatePicker Grid.Column="1"
+                        x:Name="DatePickerDate"
+                        VerticalAlignment="Center"
+                        Margin="10,0,10,0"
+                    />
         </Grid>
         <Grid Grid.Row="2">
-            
+            <DataGrid x:Name="DataGridOVR"
+                      SelectionChanged="DataGridOVR_SelectionChanged" />
         </Grid>
         <Grid Grid.Row="3">
             <Button Click="btnOpretRes"
-                Content="Opret Ny Resevation" 
+                Content="Opret Ny" 
                 Margin="80,10,80,10" />
         </Grid>
     </Grid>
