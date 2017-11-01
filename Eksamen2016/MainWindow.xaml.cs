@@ -27,7 +27,6 @@ namespace Eksamen2016
         {
             InitializeComponent();
             ucMenu = new UcMenu(UCCenter);
-            UCCenter.Content = new UcOverviewSpil();
             this.UCLeft.Content = ucMenu;
         }
 
