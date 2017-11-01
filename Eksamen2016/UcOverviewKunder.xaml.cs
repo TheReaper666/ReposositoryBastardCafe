@@ -20,9 +20,11 @@ namespace Eksamen2016
     /// </summary>
     public partial class UcOverviewKunder : UserControl
     {
-        public UcOverviewKunder()
+        private UserControl ucRight;
+        public UcOverviewKunder(object ucr)
         {
             InitializeComponent();
+            ucRight = (UserControl)ucr;
         }
 
         private void BtnOpretKunde_Click(object sender, RoutedEventArgs e)

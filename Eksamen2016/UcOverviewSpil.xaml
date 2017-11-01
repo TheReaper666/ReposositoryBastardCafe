@@ -14,10 +14,10 @@
         </Grid.RowDefinitions>
         <Grid Grid.Row="0">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition  Width="3.2*" />
+                <ColumnDefinition  Width="3.6*" />
                 <ColumnDefinition  Width="8*"/>
             </Grid.ColumnDefinitions>
-            <Label Content="Søgning:"
+            <Label x:Name="labelSøgSpil" Content="Søg spil:"
                    Grid.Column="0"
                    Grid.Row="0" />
             <TextBox x:Name="textBoxSøgeFeltSpil"
@@ -27,8 +27,8 @@
                      VerticalAlignment="Center"
                      TextChanged="TextBoxSøgeFeltSpil_TextChanged" />
         </Grid>
-        <DataGrid Grid.Row="1" x:Name="spilGrid"
-                  SelectionChanged="SpilGrid_SelectionChanged" />
+        <DataGrid Grid.Row="1" x:Name="dataGridSpil"
+                  SelectionChanged="DataGridSpil_SelectionChanged" />
         <Button Grid.Row="2"
                 x:Name="btnOpretSpil"
                 Content="OpretSpil"

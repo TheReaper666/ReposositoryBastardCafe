@@ -78,8 +78,8 @@
     <Compile Include="UcOverviewKunder.xaml.cs">
       <DependentUpon>UcOverviewKunder.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UcOverViewRes.xaml.cs">
-      <DependentUpon>UcOverViewRes.xaml</DependentUpon>
+    <Compile Include="UcOverviewRes.xaml.cs">
+      <DependentUpon>UcOverviewRes.xaml</DependentUpon>
     </Compile>
     <Compile Include="UcOverviewSpil.xaml.cs">
       <DependentUpon>UcOverviewSpil.xaml</DependentUpon>
@@ -128,7 +128,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UcOverViewRes.xaml">
+    <Page Include="UcOverviewRes.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

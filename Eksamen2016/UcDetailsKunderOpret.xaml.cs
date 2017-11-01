@@ -25,7 +25,37 @@ namespace Eksamen2016
             InitializeComponent();
         }
 
-        private void ButtonOpretKunde_Click(object sender, RoutedEventArgs e)
+        private void BtnOpretKunde_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void TextBoxFuldeNavn_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void TextBoxAdresse_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void TextBoxPostNr_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void TextBoxMobilNr_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void TextBoxEmail_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void TextBoxGamerNavn_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }

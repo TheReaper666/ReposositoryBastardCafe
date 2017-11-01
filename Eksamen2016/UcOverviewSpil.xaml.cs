@@ -20,9 +20,11 @@ namespace Eksamen2016
     /// </summary>
     public partial class UcOverviewSpil : UserControl
     {
-        public UcOverviewSpil()
+        private UserControl ucRight;
+        public UcOverviewSpil(object ucr)
         {
             InitializeComponent();
+            ucRight = (UserControl)ucr;
         }
 
         private void TextBoxSøgeFeltSpil_TextChanged(object sender, TextChangedEventArgs e)
@@ -30,7 +32,7 @@ namespace Eksamen2016
 
         }
 
-        private void SpilGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void DataGridSpil_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
         }

@@ -18,14 +18,16 @@ namespace Eksamen2016
     /// <summary>
     /// Interaction logic for UcOverWievRes.xaml
     /// </summary>
-    public partial class UcOverWievRes : UserControl
+    public partial class UcOverwievRes : UserControl
     {
-        public UcOverWievRes()
+        private UserControl ucRight;
+        public UcOverwievRes(object ucr)
         {
             InitializeComponent();
+            ucRight = (UserControl)ucr;
         }
 
-        private void btnOpretRes(object sender, RoutedEventArgs e)
+        private void BtnOpretRes_Click(object sender, RoutedEventArgs e)
         {
 
         }

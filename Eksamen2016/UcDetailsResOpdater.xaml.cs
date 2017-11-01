@@ -25,7 +25,7 @@ namespace Eksamen2016
             InitializeComponent();
         }
 
-        private void btnOpret(object sender, RoutedEventArgs e)
+        private void BtnOpret(object sender, RoutedEventArgs e)
         {
 
         }
