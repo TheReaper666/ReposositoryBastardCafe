@@ -16,24 +16,18 @@ using System.Windows.Shapes;
 namespace Eksamen2016
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for ucOverWievRes.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ucOverWievRes : UserControl
     {
-        public UcMenu ucMenu = null;
-        public UcOverviewRes ucOverviewRes = null;
-        
-        public MainWindow()
+        public ucOverWievRes()
         {
             InitializeComponent();
-            ucMenu = new UcMenu(UCCenter);
-            this.UCLeft.Content = ucMenu;
         }
 
-
-        private void MainForm_Closed(object sender, EventArgs e)
+        private void btnOpretRes(object sender, RoutedEventArgs e)
         {
-            for (int intCounter = App.Current.Windows.Count - 1; intCounter >= 0; intCounter--) App.Current.Windows[intCounter].Close();
+
         }
     }
 }
