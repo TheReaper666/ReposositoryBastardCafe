@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BastardCafe.Appbizz
 {
-    class SpilDeltagerAntal
+    public class SpilDeltagerAntal
     {
         private int deltagerantal;
         private int deltagerantalID;

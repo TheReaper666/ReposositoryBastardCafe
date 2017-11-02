@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BastardCafe.Appbizz
 {
-    class Spil
+    public class Spil
     {
         public SpilNavn spilNavn;
         public SpilGenre spilGerne;

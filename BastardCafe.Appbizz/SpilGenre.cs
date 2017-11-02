@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BastardCafe.Appbizz
 {
-    class SpilGenre
+    public class SpilGenre
     {
         private int genreID;
         private string genreName;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BastardCafe.Appbizz
 {
-    class Resevartion
+    public class Resevartion
     {
         private int resevartionsID;
         public Bord bord;
