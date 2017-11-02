@@ -21,12 +21,22 @@ namespace BastardCafe.Appbizz
 
         }
 
-        public string FuldeNavn { get => fuldeNavn; set => fuldeNavn = value; }
-        public string Adresse { get => adresse; set => adresse = value; }
-        public int PostNr { get => postNr; set => postNr = value; }
-        public string ByNavn { get => byNavn; set => byNavn = value; }
-        public int MobilNr { get => mobilNr; set => mobilNr = value; }
-        public string Email { get => email; set => email = value; }
-        public string GamerNavn { get => gamerNavn; set => gamerNavn = value; }
+        public Kunde(int kId)
+        {
+            KundeSetup(kId);
+        }
+
+        private void KundeSetup(int kId)
+        {
+            
+        }
+
+        public string FuldeNavn { get => fuldeNavn; private set => fuldeNavn = value; }
+        public string Adresse { get => adresse; private set => adresse = value; }
+        public int PostNr { get => postNr; private set => postNr = value; }
+        public string ByNavn { get => byNavn; private set => byNavn = value; }
+        public int MobilNr { get => mobilNr; private set => mobilNr = value; }
+        public string Email { get => email;private set => email = value; }
+        public string GamerNavn { get => gamerNavn; private set => gamerNavn = value; }
     }
 }
