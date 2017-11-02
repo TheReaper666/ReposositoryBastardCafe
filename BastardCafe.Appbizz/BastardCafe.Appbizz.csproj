@@ -47,10 +47,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resevartion.cs" />
     <Compile Include="Spil.cs" />
-    <Compile Include="SpilDeltager.cs" />
+    <Compile Include="SpilDeltagerAntal.cs" />
     <Compile Include="SpilGenre.cs" />
     <Compile Include="SpilNavn.cs" />
-    <Compile Include="SpilTid.cs" />
+    <Compile Include="SpilNormTid.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BastardCafe.IO\BastardCafe.IO.csproj">

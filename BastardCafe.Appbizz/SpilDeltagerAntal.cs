@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace BastardCafe.Appbizz
 {
-    class SpilDeltager
+    class SpilDeltagerAntal
     {
-        public SpilDeltager()
+        public SpilDeltagerAntal()
         {
 
         }
