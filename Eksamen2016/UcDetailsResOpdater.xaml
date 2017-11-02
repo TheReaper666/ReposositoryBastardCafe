@@ -20,10 +20,10 @@
                 <ColumnDefinition Width="1*"/>
                 <ColumnDefinition Width="3*"/>
             </Grid.ColumnDefinitions>
-            <Label Content="Date:"
+            <Label x:Name="labelDato" Content="Dato:"
                    VerticalAlignment="Center"
                    HorizontalAlignment="Center" />
-            <DatePicker x:Name="DatePickerDate"
+            <DatePicker x:Name="datePickerDate"
                         Grid.Column="1"
                         VerticalAlignment="Center"
                         Margin="10,0,10,0" />
@@ -33,10 +33,10 @@
                 <ColumnDefinition Width="1*" />
                 <ColumnDefinition Width="3*" />
             </Grid.ColumnDefinitions>
-            <Label Content="BordNr:"
+            <Label x:Name="labelBordNr" Content="Bord Nr:"
                    VerticalAlignment="Center"
                    HorizontalAlignment="Center" />
-            <ComboBox x:Name="ComboBoxBordNummer"
+            <ComboBox x:Name="comboBoxBordNummer"
                       Grid.Column="1"
                       VerticalAlignment="Center"
                       Margin="10,0,10,0" />
@@ -46,10 +46,10 @@
                 <ColumnDefinition Width="1*" />
                 <ColumnDefinition Width="3*" />
             </Grid.ColumnDefinitions>
-            <Label Content="Spil Navn:"
+            <Label x:Name="labelSpilNavn" Content="Spilnavn:"
                    VerticalAlignment="Center"
                    HorizontalAlignment="Center" />
-            <ComboBox x:Name="ComboBoxSpilNavn"
+            <ComboBox x:Name="comboBoxSpilNavn"
                       Grid.Column="1"
                       VerticalAlignment="Center"
                       Margin="10,0,10,0" />
@@ -59,20 +59,21 @@
                 <ColumnDefinition Width="1*" />
                 <ColumnDefinition Width="3*" />
             </Grid.ColumnDefinitions>
-            <Label Content="Søgning"
+            <Label x:Name="labelSøgefeltKunde" 
+                   Content="Søg kunde:"
                    VerticalAlignment="Center"
                    HorizontalAlignment="Center" />
-            <ComboBox x:Name="TextBoxSøgefelt"
+            <ComboBox x:Name="textBoxSøgefeltKunde"
                       Grid.Column="1"
                       VerticalAlignment="Center"
                       Margin="10,0,10,0" />
         </Grid>
         <Grid Grid.Row="4">
-            <ListBox x:Name="ListBox"
+            <ListBox x:Name="listBoxKunder"
                       Margin="10,5,10,5" />
         </Grid>
         <Grid Grid.Row="5">
-            <Button Click="btnOpret"
+            <Button Click="BtnOpret"
                     Content="Opret Ny"
                     Margin="80,5,80,5" />
         </Grid>

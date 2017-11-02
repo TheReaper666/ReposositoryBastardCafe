@@ -21,15 +21,15 @@ namespace Eksamen2016
     public partial class MainWindow : Window
     {
         public UcMenu ucMenu = null;
-        public UcOverWievRes ucOverviewRes = null;
+        public UcOverviewRes ucOverviewRes = null;
         public UcOverviewKunder ucOverviewKunder = null;
         public UcOverviewSpil ucOverviewSpil = null;
 
         public MainWindow()
         {
             InitializeComponent();
-            ucMenu = new UcMenu(UCCenter);
-            this.UCLeft.Content = ucMenu;
+            ucMenu = new UcMenu(ucCenter, ucRight);
+            this.ucLeft.Content = ucMenu;
         }
 
 

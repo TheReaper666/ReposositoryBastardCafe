@@ -22,19 +22,19 @@
             <RowDefinition Height="1*" />
             <RowDefinition Height="1*" />
         </Grid.RowDefinitions>
-        <Label x:Name="labelFuldeNavn" Grid.Column="0" Grid.Row="0" Width="87"  Content="Fulde navn:" HorizontalAlignment="Left" Margin="3,3" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBoxSearchFieldCostumer" Text="" Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="3" Height="24" HorizontalAlignment="Left" Margin="3,3" VerticalAlignment="Top" Width="275"/>
+        <Label x:Name="labelFuldeNavn" Grid.Column="0" Grid.Row="0" Width="87"  Content="Navn:" HorizontalAlignment="Left" Margin="3,3" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxFuldeNavn" Text="" Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="3" Height="24" HorizontalAlignment="Left" Margin="3,3" VerticalAlignment="Top" Width="275" TextChanged="TextBoxFuldeNavn_TextChanged"/>
         <Label x:Name="labelAdresse" Grid.Column="0" Grid.Row="1" Width="877"  Content="Adresse:" HorizontalAlignment="Left" Margin="3,3" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBoxAdresse" Text="" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3" Height="24" HorizontalAlignment="Left" Margin="3,3" VerticalAlignment="Top" Width="275"/>
+        <TextBox x:Name="textBoxAdresse" Text="" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3" Height="24" HorizontalAlignment="Left" Margin="3,3" VerticalAlignment="Top" Width="275" TextChanged="TextBoxAdresse_TextChanged"/>
         <Label x:Name="labelPostBy" Grid.Column="0" Grid.Row="2" Width="87"  Content="Postnr og By:" HorizontalAlignment="Left" Margin="3,3" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBoxPostNr" Text="" Grid.Column="1" Grid.Row="2" Height="24" HorizontalAlignment="Left" Margin="3,3" VerticalAlignment="Top" Width="87"/>
+        <TextBox x:Name="textBoxPostNr" Text="" Grid.Column="1" Grid.Row="2" Height="24" HorizontalAlignment="Left" Margin="3,3" VerticalAlignment="Top" Width="87" TextChanged="TextBoxPostNr_TextChanged"/>
         <Label x:Name="labelBynavn" Grid.Column="2" Grid.Row="2" Width="181"  Content="" HorizontalAlignment="Left" Margin="3,3" VerticalAlignment="Top"/>
         <Label x:Name="labelMobilNr" Grid.Column="0" Grid.Row="3" Width="87"  Content="Mobilnr:" HorizontalAlignment="Left" Margin="3,3" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBoxMobilNr" Text="" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="3" Height="24" HorizontalAlignment="Left" Margin="3,3" VerticalAlignment="Top" Width="275"/>
+        <TextBox x:Name="textBoxMobilNr" Text="" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="3" Height="24" HorizontalAlignment="Left" Margin="3,3" VerticalAlignment="Top" Width="275" TextChanged="TextBoxMobilNr_TextChanged"/>
         <Label x:Name="labelEmail" Grid.Column="0" Grid.Row="4" Width="87"  Content="Email:" HorizontalAlignment="Left" Margin="3,3" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBoxEmail" Text="" Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="3" Height="24" HorizontalAlignment="Left" Margin="3,3" VerticalAlignment="Top" Width="275"/>
+        <TextBox x:Name="textBoxEmail" Text="" Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="3" Height="24" HorizontalAlignment="Left" Margin="3,3" VerticalAlignment="Top" Width="275" TextChanged="TextBoxEmail_TextChanged"/>
         <Label x:Name="labelGamerNavn" Grid.Column="0" Grid.Row="5" Width="87"  Content="Gamernavn:" HorizontalAlignment="Left" Margin="3,3" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBoxGamerNavn" Text="" Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="3" Height="24" HorizontalAlignment="Left" Margin="3,3" VerticalAlignment="Top" Width="275"/>
-        <Button x:Name="buttonOpretKunde" Grid.Column="1" Grid.Row="6" Grid.ColumnSpan="2" Content="Opret" HorizontalAlignment="Center" Margin="3,3" VerticalAlignment="Top" Width="120" Click="ButtonOpretKunde_Click"/>
+        <TextBox x:Name="textBoxGamerNavn" Text="" Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="3" Height="24" HorizontalAlignment="Left" Margin="3,3" VerticalAlignment="Top" Width="275" TextChanged="TextBoxGamerNavn_TextChanged"/>
+        <Button x:Name="btnOpretKunde" Grid.Column="1" Grid.Row="6" Grid.ColumnSpan="2" Content="Opret" HorizontalAlignment="Center" Margin="3,3" VerticalAlignment="Top" Width="120" Click="BtnOpretKunde_Click"/>
     </Grid>
 </UserControl>

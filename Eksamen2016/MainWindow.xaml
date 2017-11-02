@@ -16,8 +16,8 @@
             <ColumnDefinition Width="223*" />
             <ColumnDefinition Width="373*" />
         </Grid.ColumnDefinitions>
-        <UserControl x:Name="UCLeft" Grid.Column="0" />
-        <UserControl x:Name="UCCenter" Grid.Column="1" />
-        <UserControl x:Name="UCRight" Grid.Column="2" />
+        <UserControl x:Name="ucLeft" Grid.Column="0" />
+        <UserControl x:Name="ucCenter" Grid.Column="1" />
+        <UserControl x:Name="ucRight" Grid.Column="2" />
     </Grid>
 </Window>

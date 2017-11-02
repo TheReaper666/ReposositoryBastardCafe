@@ -21,8 +21,8 @@
                VerticalAlignment="Top" 
                Width="138" 
                Source="Images/Ikon.png"/>
-        <Button x:Name="buttonReservations" Grid.Row="1" Content="Reservationer" HorizontalAlignment="Center" Margin="3,3" VerticalAlignment="Top" Width="138" Click="ButtonReservations_Click"/>
-        <Button x:Name="buttonCustomers" Grid.Row="2" Content="Kunder" HorizontalAlignment="Center" Margin="3,3" VerticalAlignment="Top" Width="138" Click="ButtonCustomers_Click"/>
-        <Button x:Name="buttonGames" Grid.Row="3" Content="Spil" HorizontalAlignment="Center" Margin="3,3" VerticalAlignment="Top" Width="138" Click="ButtonGames_Click"/>
+        <Button x:Name="btnReservationer" Grid.Row="1" Content="Reservationer" HorizontalAlignment="Center" Margin="3,3" VerticalAlignment="Center" Width="138" Click="BtnReservationer_Click"/>
+        <Button x:Name="btnKunder" Grid.Row="2" Content="Kunder" HorizontalAlignment="Center" Margin="3,3" VerticalAlignment="Center" Width="138" Click="BtnKunder_Click"/>
+        <Button x:Name="btnSpil" Grid.Row="3" Content="Spil" HorizontalAlignment="Center" Margin="3,3" VerticalAlignment="Center" Width="138" Click="BtnSpil_Click"/>
     </Grid>
 </UserControl>

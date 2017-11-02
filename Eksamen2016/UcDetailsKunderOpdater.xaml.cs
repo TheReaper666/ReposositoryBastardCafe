@@ -29,5 +29,35 @@ namespace Eksamen2016
         {
 
         }
+
+        private void TextBoxFuldenavn_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void TextBoxAdresse_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void TextBoxPostNr_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void TextBoxMobilNr_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void TextBoxEmail_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void TextBoxGamerNavn_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

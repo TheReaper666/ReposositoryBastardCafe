@@ -14,10 +14,11 @@
         </Grid.RowDefinitions>
         <Grid Grid.Row="0">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition  Width="3.2*" />
+                <ColumnDefinition  Width="3.6*" />
                 <ColumnDefinition  Width="8*"/>
             </Grid.ColumnDefinitions>
-            <Label Content="Søgning:"
+            <Label x:Name="labelSøgKunde" 
+                   Content="Søg kunde:"
                    Grid.Column="0"
                    Grid.Row="0" />
             <TextBox x:Name="textBoxSøgeFeltKunder"
@@ -34,7 +35,7 @@
                 Content="Opret Kunde"
                 Height="19"
                 Margin="0,1,0,0"
-                Width="60"
+                Width="120"
                 Click="BtnOpretKunde_Click" />
     </Grid>
 </UserControl>
