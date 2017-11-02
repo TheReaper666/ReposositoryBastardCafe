@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="Eksamen2016.UcOverviewRes"
+﻿<UserControl x:Class="Eksamen2016.UcOverWievRes"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -24,7 +24,7 @@
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center" />
             <TextBox Grid.Column="1"
-                     x:Name="textboxSøgefelt" 
+                     x:Name="TextboxSøgefelt" 
                      Margin="10,12,10,12"
                      TextChanged="TextboxSøgefelt_TextChanged" />
 
@@ -39,17 +39,17 @@
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center" />
             <DatePicker Grid.Column="1"
-                        x:Name="datePickerDate"
+                        x:Name="DatePickerDate"
                         VerticalAlignment="Center"
                         Margin="10,0,10,0"
                     />
         </Grid>
         <Grid Grid.Row="2">
-            <DataGrid x:Name="dataGridOVR"
+            <DataGrid x:Name="DataGridOVR"
                       SelectionChanged="DataGridOVR_SelectionChanged" />
         </Grid>
         <Grid Grid.Row="3">
-            <Button x:Name="btnOpretRes" Click="BtnOpretRes_Click"
+            <Button Click="btnOpretRes"
                 Content="Opret Ny" 
                 Margin="80,10,80,10" />
         </Grid>

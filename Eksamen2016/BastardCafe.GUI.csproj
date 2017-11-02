@@ -166,6 +166,12 @@
   <ItemGroup>
     <Resource Include="Images\Ikon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BastardCafe.Appbizz\BastardCafe.Appbizz.csproj">
+      <Project>{81e4779b-e969-47bd-8954-2028b3ccddf8}</Project>
+      <Name>BastardCafe.Appbizz</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
