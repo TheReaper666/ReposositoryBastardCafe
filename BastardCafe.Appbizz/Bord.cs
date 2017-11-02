@@ -16,7 +16,17 @@ namespace BastardCafe.Appbizz
 
         }
 
-        public int BordId { get => bordId; set => bordId = value; }
-        public int BordPladser { get => bordPladser; set => bordPladser = value; }
+        public Bord(int bordId)
+        {
+            BordSetup(bordId);
+        }
+
+        private void BordSetup(int bordId)
+        {
+            
+        }
+
+        public int BordId { get => bordId; private set => bordId = value; }
+        public int BordPladser { get => bordPladser; private set => bordPladser = value; }
     }
 }

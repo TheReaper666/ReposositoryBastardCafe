@@ -21,12 +21,12 @@ namespace BastardCafe.Appbizz
 
         }
 
-        public Kunde(int kId)
+        public Kunde(int kundeId)
         {
-            KundeSetup(kId);
+            KundeSetup(kundeId);
         }
 
-        private void KundeSetup(int kId)
+        private void KundeSetup(int kundeId)
         {
             
         }
