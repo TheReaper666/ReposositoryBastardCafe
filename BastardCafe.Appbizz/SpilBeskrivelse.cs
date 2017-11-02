@@ -8,15 +8,15 @@ namespace BastardCafe.Appbizz
 {
     public class SpilBeskrivelse
     {
-        private int spilBeskrivelseId;
-        private string spilBeskrivelse;
+        private int beskrivelseId;
+        private string beskrivelse;
 
         public SpilBeskrivelse()
         {
 
         }
 
-        public int SpilBeskrivelseId { get => spilBeskrivelseId; set => spilBeskrivelseId = value; }
-        public string SpilBeskrivelse { get => spilBeskrivelse; set => spilBeskrivelse = value; }
+        public int BeskrivelseId { get => beskrivelseId; set => beskrivelseId = value; }
+        public string Beskrivelse { get => beskrivelse; set => beskrivelse = value; }
     }
 }
