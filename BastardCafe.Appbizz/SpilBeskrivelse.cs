@@ -19,16 +19,17 @@ namespace BastardCafe.Appbizz
 
         }
 
-        public SpilBeskrivelse(string beskriv, int beskId)
+        public SpilBeskrivelse(string beskriv, int beskrivId)
         {
-            beskrivelse = beskriv;
-            beskrivelseId = beskId;
+            Beskrivelse = beskriv;
+            BeskrivelseId = beskrivId;
         }
+
         #endregion
 
         #region Properties
-        public int BeskrivelseId { get => beskrivelseId; }
-        public string Beskrivelse { get => beskrivelse; }
+        public string Beskrivelse { get => beskrivelse; private set => beskrivelse = value; }
+        public int BeskrivelseId { get => beskrivelseId; private set => beskrivelseId = value; }
         #endregion
     }
 }
