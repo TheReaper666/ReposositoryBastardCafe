@@ -8,9 +8,18 @@ namespace BastardCafe.Appbizz
 {
     class SpilDeltagerAntal
     {
+        private int deltagerantal;
+        private int deltagerantalID;
         public SpilDeltagerAntal()
         {
 
+        }
+        public int DeltagerAntal { get; private set; }
+        public int DeltagerAntalID { get; private set; }
+        public SpilDeltagerAntal(int deltagerantal, int deltagerantalID)
+        {
+            this.deltagerantal = deltagerantal;
+            this.deltagerantalID = deltagerantalID;
         }
     }
 }
