@@ -10,7 +10,7 @@ namespace BastardCafe.Appbizz
 {
     public class BastardCafeBizz
     {
-        public ObservableCollection<Kunde> DataKunde;
+        public ObservableCollection<Kunde> DataKunder;
         public ObservableCollection<Resevartion> DataResevartion;
         public ObservableCollection<Spil> DataSpil;
         public BastardCafeBizz()
@@ -24,7 +24,7 @@ namespace BastardCafe.Appbizz
         }
         public void FillKundeData()
         {
-            DataSet DSKundeData;
+            DataSet DSDataKunder;
         }
         public void FillSpilData()
         {
