@@ -8,13 +8,13 @@ using System.Data.SqlClient;
 using System.Collections;
 using System.Windows.Forms;
 
-namespace BastardCafe.IO
+namespace GeneralDB.IO
 {
-    class CafeBastardIO
+    public class DatabaseFunktions
     {
         private SqlConnection myConnection;
         private string _ConnectionString;
-        public CafeBastardIO()
+        public DatabaseFunktions()
         {
         }
 
@@ -193,8 +193,8 @@ namespace BastardCafe.IO
         /// - Vore strSql Afgøre hvilke row der bliver valgt, 
         /// og herefter skriver vi hvert field in i strList.
         /// </summary>
-        /// <param name="strSql"></param>
-        /// <returns>strList</returns>
+        /// <param name="strSql">SQL Query som string</param>
+        /// <returns name="strList">List af strings</returns>
         protected List<string> DbReturnDbRowAsListString(string strSql)
         {
             List<string> strList = new List<string>();
@@ -225,14 +225,15 @@ namespace BastardCafe.IO
             return strList;
         }
 
+
         /// <summary>
         /// Denne metode returnere en collum, som er conveteret til string, 
         /// som bliver stoppet i en list.
         /// - Vore strSql Afgøre hvilke collum der bliver valgt, 
         /// og herefter skriver vi hvert field in i strList.
         /// </summary>
-        /// <param name="strSql"></param>
-        /// <returns name="strList"></returns>
+        /// <param name="strSql">SQL Query som string</param>
+        /// <returns name="strList">List af strings</returns>
         protected List<string> DbReturnDbCollumAsListString(string strSql)
         {
             List<string> strList = new List<string>();
@@ -268,8 +269,8 @@ namespace BastardCafe.IO
         /// - Vore strSql Afgøre hvilke row der bliver valgt, 
         /// og herefter skriver vi hvert field in i arrayList.
         /// </summary>
-        /// <param name="strSql"></param>
-        /// <returns name="arrayList"></returns>
+        /// <param name="strSql">SQL Query som string</param>
+        /// <returns name="arrayList">Array List af data</returns>
         protected ArrayList DBReturnDBRowAsArrayList(string strSql)
         {
             ArrayList arrayList = new ArrayList();
@@ -300,13 +301,12 @@ namespace BastardCafe.IO
         }
 
         /// <summary>
-        /// Denne metode returnere en Collum, som er conveteret til string, 
-        /// som bliver stoppet i en ArrayList.
+        /// Denne metode returnere en Collum, som bliver stoppet i en ArrayList.
         /// - Vore strSql Afgøre hvilke Collum der bliver valgt, 
         /// og herefter skriver vi hvert field in i arrayList.
         /// </summary>
-        /// <param name="strSql"></param>
-        /// <returns name="arrayList"></returns>
+        /// <param name="strSql">SQL Query som string</param>
+        /// <returns name="arrayList">Array List af data</returns>
         protected ArrayList DBReturnDBCollumAsArrayList(string strSql)
         {
             ArrayList arrayList = new ArrayList();
@@ -320,7 +320,7 @@ namespace BastardCafe.IO
                     {
                         while (reader.Read())
                         {
-                                arrayList.Add(reader.GetValue(0).ToString());
+                                arrayList.Add(reader.GetValue(0));
                         }
                     }
                 }
@@ -337,7 +337,7 @@ namespace BastardCafe.IO
         /// Denne metode bliver brugt til at skrive ned i DB,
         /// Uden at den forventer at få noget tilbage.
         /// </summary>
-        /// <param name="strSql"></param>
+        /// <param name="strSql">SQL Query som string</param>
         protected void FunctionExecuteNonQuery(string strSql)
         {
             try
@@ -356,10 +356,10 @@ namespace BastardCafe.IO
         }
 
         /// <summary>
-        /// Denne metode henter alle booleans fra det valgte Table.
+        /// Denne metode henter den valgte boolean fra det valgte Table.
         /// </summary>
-        /// <param name="strSql"></param>
-        /// <returns name="bolRes"></returns>
+        /// <param name="strSql">SQL Query som string</param>
+        /// <returns name="bolRes">Bolean - true or false</returns>
         protected bool DbReturnBool(string strSql)
         {
             bool bolRes = false;

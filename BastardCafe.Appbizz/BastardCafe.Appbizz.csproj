@@ -53,9 +53,9 @@
     <Compile Include="SpilNormTid.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BastardCafe.IO\BastardCafe.IO.csproj">
+    <ProjectReference Include="..\BastardCafe.IO\GeneralDB.IO.csproj">
       <Project>{835b2648-f457-4f91-943f-9d2198d5bca1}</Project>
-      <Name>BastardCafe.IO</Name>
+      <Name>GeneralDB.IO</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

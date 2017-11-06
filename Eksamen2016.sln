@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BastardCafe.GUI", "Eksamen2
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BastardCafe.Appbizz", "BastardCafe.Appbizz\BastardCafe.Appbizz.csproj", "{81E4779B-E969-47BD-8954-2028B3CCDDF8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BastardCafe.IO", "BastardCafe.IO\BastardCafe.IO.csproj", "{835B2648-F457-4F91-943F-9D2198D5BCA1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneralDB.IO", "BastardCafe.IO\GeneralDB.IO.csproj", "{835B2648-F457-4F91-943F-9D2198D5BCA1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

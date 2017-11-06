@@ -20,15 +20,15 @@ namespace BastardCafe.Appbizz
 
         public void FillReservationData()
         {
-            DataSet DSReservation;
+            DataTable DSReservation;
         }
         public void FillKundeData()
         {
-            DataSet DSDataKunder;
+            DataTable DSDataKunder;
         }
         public void FillSpilData()
         {
-            DataSet DSSpilData;
+            DataTable DSSpilData;
         }
     }
 }
