@@ -35,12 +35,21 @@ namespace GeneralDB.IO
 
         public void DTUpdateKundeData()
         {
-            string SQLquery = "";
+        string fuldeNavn;
+        string adresse;
+        int postNr;
+        string byNavn;
+        int mobilNr;
+        string email;
+        string gamerNavn;
+        string SQLquery = "INSERT INTO Kunder (FuldeNavn, ) VALUES ";
         }
+
         public void DTUpdateSpilData()
         {
             string SQLquery = "";
         }
+
         public void DTUpdateResevartionData()
         {
             string SQLquery = "";
@@ -51,10 +60,12 @@ namespace GeneralDB.IO
         {
             string SQLquery = "";
         }
+
         public void DTCreateSpilData()
         {
             string SQLquery = "";
         }
+
         public void DTCreateResevartionData()
         {
             string SQLquery = "";

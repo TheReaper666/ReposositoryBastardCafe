@@ -41,22 +41,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BastardCafeBizz.cs" />
-    <Compile Include="Bord.cs" />
-    <Compile Include="Kunde.cs" />
-    <Compile Include="SpilBeskrivelse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Resevartion.cs" />
-    <Compile Include="Spil.cs" />
-    <Compile Include="SpilDeltagerAntal.cs" />
-    <Compile Include="SpilGenre.cs" />
-    <Compile Include="SpilNavn.cs" />
-    <Compile Include="SpilNormTid.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BastardCafe.BizzEntities\BastardCafe.BizzEntities.csproj">
+      <Project>{be543fae-e429-42a4-8ace-b431a511cfd9}</Project>
+      <Name>BastardCafe.BizzEntities</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BastardCafe.IO\GeneralDB.IO.csproj">
       <Project>{835b2648-f457-4f91-943f-9d2198d5bca1}</Project>
       <Name>GeneralDB.IO</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
