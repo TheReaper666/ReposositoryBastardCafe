@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BastardCafe.BizzEntities;
 
 
 namespace GeneralDB.IO
@@ -23,7 +24,7 @@ namespace GeneralDB.IO
         }
         public DataTable DTGetSpilData()
         {
-            string SQLquery = "SELECT * FROM Spil";
+            string SQLquery = "SELECT Spil.Spilid, SpilNavn.SpilNavn, SpilGenre.Genre, SpilDeltagerAntal.SpilDeltagerAntal, SpilTid.SpilTid, SpilBeskrivelse.SpilBeskrivelse FROM Spil INNER JOIN SpilBeskrivelse ON Spil.Spilid = SpilBeskrivelse.Spilid INNER JOIN SpilDeltagerAntal ON Spil.DeltagerId = SpilDeltagerAntal.Deltagerid INNER JOIN SpilGenre ON Spil.Genreid = SpilGenre.Genreid INNER JOIN SpilNavn ON Spil.NavnId = SpilNavn.Navnid INNER JOIN SpilTid ON Spil.NormalTidId = SpilTid.Tidid WHERE (Spil.SpilStatus = 1)";
             return DbReturnDataTable(SQLquery);
         }
         public DataTable DTGetResevartionData()
@@ -33,40 +34,33 @@ namespace GeneralDB.IO
         }
 
 
-        public void DTUpdateKundeData()
+        public void DTUpdateKundeData(Kunde kunde) // VALIDERING FØR I KALDER DENNE METODE!
         {
-        string fuldeNavn;
-        string adresse;
-        int postNr;
-        string byNavn;
-        int mobilNr;
-        string email;
-        string gamerNavn;
-        string SQLquery = "INSERT INTO Kunder (FuldeNavn, ) VALUES ";
+            string SQLquery = $"UPDATE Kunder SET FuldeNavn = '{kunde.FuldeNavn}', Adresse = '{kunde.Adresse}', Mobil = '{kunde.MobilNr}', Email = '{kunde.Email}', GamerNavn = '{kunde.GamerNavn}'";
         }
 
-        public void DTUpdateSpilData()
+        public void DTUpdateSpilData(Spil spil)// VALIDERING FØR I KALDER DENNE METODE!
         {
-            string SQLquery = "";
+            string SQLquery = $"UPDATE Spil SET SpilNavn = '{spil.spilNavn}', SpilGenre = '{spil.spilGerne}', SpilDeltager = {spil.spilDeltagerAntal}, SpilBeskrivelse  = '{spil.spilBeskrivelse}', SpilTid  = '{spil.spilNormTid}'";
         }
 
-        public void DTUpdateResevartionData()
+        public void DTUpdateResevartionData(Resevartion res)// VALIDERING FØR I KALDER DENNE METODE!
         {
-            string SQLquery = "";
+            string SQLquery = $"UPDATE BordRes SET DØDEN! ";
         }
 
 
-        public void DTCreateKundeData()
+        public void DTCreateKundeData(Kunde kunde)// VALIDERING FØR I KALDER DENNE METODE!
+        {
+            string SQLqueryKunde = $"INSERT INTO Kunder(FuldeNavn,Adresse,Mobil,Email,GamerNavn) VALUES ('{kunde.FuldeNavn}','{kunde.Adresse}',{kunde.MobilNr},'{kunde.Email}','{kunde.GamerNavn}')";
+        }
+
+        public void DTCreateSpilData()// VALIDERING FØR I KALDER DENNE METODE!
         {
             string SQLquery = "";
         }
 
-        public void DTCreateSpilData()
-        {
-            string SQLquery = "";
-        }
-
-        public void DTCreateResevartionData()
+        public void DTCreateResevartionData()// VALIDERING FØR I KALDER DENNE METODE!
         {
             string SQLquery = "";
         }
