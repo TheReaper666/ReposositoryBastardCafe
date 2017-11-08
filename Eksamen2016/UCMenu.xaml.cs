@@ -25,7 +25,6 @@ namespace Eksamen2016
         private UcOverviewRes ucOverviewRes;
         private UcOverviewKunder ucOverviewKunder;
         private UcOverviewSpil ucOverviewSpil;
-
         public UcMenu(object ucc, object ucr)
         {
             InitializeComponent();
