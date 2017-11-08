@@ -16,10 +16,10 @@ namespace BastardCafe.BizzEntities
         }
         public int DeltagerAntal { get; private set; }
         public int DeltagerAntalID { get; private set; }
-        public SpilDeltagerAntal(int deltagerantal, int deltagerantalID)
+        public SpilDeltagerAntal(int Deltagerantal, int DeltagerantalID)
         {
-            this.deltagerantal = deltagerantal;
-            this.deltagerantalID = deltagerantalID;
+            deltagerantal = Deltagerantal;
+            deltagerantalID = DeltagerantalID;
         }
     }
 }
