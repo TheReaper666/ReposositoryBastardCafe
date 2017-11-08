@@ -14,7 +14,7 @@ namespace BastardCafe.BizzEntities
         {
 
         }
-        public int DeltagerAntal
+        public string DeltagerAntal
         {
             get
             {
@@ -36,7 +36,7 @@ namespace BastardCafe.BizzEntities
                 deltagerantalID = value;
             }
         }
-        public SpilDeltagerAntal(int Deltagerantal, int DeltagerantalID)
+        public SpilDeltagerAntal(string Deltagerantal, int DeltagerantalID)
         {
             deltagerantal = Deltagerantal;
             deltagerantalID = DeltagerantalID;
