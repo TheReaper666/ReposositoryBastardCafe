@@ -15,8 +15,28 @@ namespace BastardCafe.BizzEntities
         {
 
         }
-        public string Name { get; private set; }
-        public int NameID { get; private set; }
+        public string Name
+        {
+            get
+            {
+                return name;
+            }
+            private set
+            {
+                name = value;
+            }
+        }
+        public int NameID
+        {
+            get
+            {
+                return nameid;
+            }
+            private set
+            {
+                nameid = value;
+            }
+        }
 
         public SpilNavn(string Name, int Nameid)
         {

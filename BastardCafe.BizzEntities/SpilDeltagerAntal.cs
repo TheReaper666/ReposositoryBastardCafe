@@ -14,8 +14,28 @@ namespace BastardCafe.BizzEntities
         {
 
         }
-        public int DeltagerAntal { get; private set; }
-        public int DeltagerAntalID { get; private set; }
+        public int DeltagerAntal
+        {
+            get
+            {
+                return deltagerantal;
+            }
+            private set
+            {
+                deltagerantal = value;
+            }
+        }
+        public int DeltagerAntalID
+        {
+            get
+            {
+                return deltagerantalID;
+            }
+            private set
+            {
+                deltagerantalID = value;
+            }
+        }
         public SpilDeltagerAntal(int Deltagerantal, int DeltagerantalID)
         {
             deltagerantal = Deltagerantal;
