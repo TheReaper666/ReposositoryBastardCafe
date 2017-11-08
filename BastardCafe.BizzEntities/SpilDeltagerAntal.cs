@@ -8,7 +8,7 @@ namespace BastardCafe.BizzEntities
 {
     public class SpilDeltagerAntal
     {
-        private int deltagerantal;
+        private string deltagerantal;
         private int deltagerantalID;
         public SpilDeltagerAntal()
         {

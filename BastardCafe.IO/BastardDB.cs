@@ -49,7 +49,7 @@ namespace GeneralDB.IO
             return DbReturnDataTable(SQLquery);
         }
 
-        public void DTUpdateKundeData(Kunde kunde) // VALIDERING FØR I KALDER DENNE METODE!
+        public void DTUpdateKundeData(Kunde kunde) // VALIDERING FØR I KALDER DENNE METODE! NÆ
         {
             string SQLquery = $"UPDATE Kunder SET FuldeNavn = '{kunde.FuldeNavn}', Adresse = '{kunde.Adresse}', Mobil = '{kunde.MobilNr}', Email = '{kunde.Email}', GamerNavn = '{kunde.GamerNavn}'";
         }

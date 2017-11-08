@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using BastardCafe.Appbizz;
 namespace Eksamen2016
 {
     /// <summary>
@@ -25,6 +25,7 @@ namespace Eksamen2016
         private UcOverviewRes ucOverviewRes;
         private UcOverviewKunder ucOverviewKunder;
         private UcOverviewSpil ucOverviewSpil;
+        private BastardCafeBizz f = new BastardCafeBizz();
         public UcMenu(object ucc, object ucr)
         {
             InitializeComponent();
@@ -47,6 +48,7 @@ namespace Eksamen2016
 
         private void BtnSpil_Click(object sender, RoutedEventArgs e)
         {
+            f.FillSpilData();
             ucCenter.Content = ucOverviewSpil;
         }
     }

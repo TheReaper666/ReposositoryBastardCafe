@@ -14,7 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Eksamen2016
-{
+{  
     /// <summary>
     /// Interaction logic for UcOverWievRes.xaml
     /// </summary>
@@ -29,7 +29,7 @@ namespace Eksamen2016
 
         private void BtnOpretRes_Click(object sender, RoutedEventArgs e)
         {
-
+            
         }
 
         private void DataGridOVR_SelectionChanged(object sender, SelectionChangedEventArgs e)

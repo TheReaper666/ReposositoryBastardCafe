@@ -21,14 +21,29 @@ namespace BastardCafe.BizzEntities
 
         }
 
-        public Spil(DataSet data)
+        public Spil(DataTable data)
         {
             SetupSpilClass(data);
         }
 
-        private void SetupSpilClass(DataSet ds)
+        private void SetupSpilClass(DataTable ds)
         {
-            
+            DataTableReader reader = new DataTableReader(ds);
+            while (reader.Read())
+            {
+                int spilId = Convert.ToInt32(reader["Spilid"]);
+                string navn = reader["SpilNavn"].ToString();
+                string genre = reader["Genre"].ToString();
+                string deltagerAntal = reader["SpilDeltagerAntal"].ToString();
+                int spilTid = Convert.ToInt32(reader["SpilTid"]);
+                string beskrivelse = reader["SpilBeskrivelse"].ToString();
+                SpilID = spilId;
+                spilNavn = new SpilNavn(navn, spilId);
+                spilGerne = new SpilGenre(spilId, genre);
+                spilBeskrivelse = new SpilBeskrivelse(beskrivelse, spilId);
+                spilDeltagerAntal = new SpilDeltagerAntal(deltagerAntal,spilId);
+                spilNormTid = new SpilNormTid(spilId, spilTid);
+            }
         }
 
 
