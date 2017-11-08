@@ -18,10 +18,10 @@ namespace BastardCafe.BizzEntities
         public string Name { get; private set; }
         public int NameID { get; private set; }
 
-        public SpilNavn(string name, int nameid)
+        public SpilNavn(string Name, int Nameid)
         {
-            this.name = name;
-            this.nameid = nameid;
+            name = Name;
+            nameid = Nameid;
         }
     }
 }

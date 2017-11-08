@@ -18,8 +18,8 @@ namespace BastardCafe.BizzEntities
         public int DeltagerAntalID { get; private set; }
         public SpilDeltagerAntal(string deltagerantal, int deltagerantalID)
         {
-            this.deltagerantal = deltagerantal;
-            this.deltagerantalID = deltagerantalID;
+            deltagerantal = Deltagerantal;
+            deltagerantalID = DeltagerantalID;
         }
     }
 }
