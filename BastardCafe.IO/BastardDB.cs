@@ -19,7 +19,8 @@ namespace GeneralDB.IO
 
         public DataTable DTGetKundeData()
         {
-            string SQLquery = "SELECT * FROM Kunder";
+            string SQLquery = $"SELECT Kunder.id, PostBy.ByNavn " +
+            $"FROM Kunder INNER JOIN PostBy ON Kunder.PostNr = PostBy.PostNr";
             return DbReturnDataTable(SQLquery);
         }
         public DataTable DTGetSpilData(bool ValgSpilStatus)
