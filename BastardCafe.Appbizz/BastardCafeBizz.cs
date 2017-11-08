@@ -14,8 +14,9 @@ namespace BastardCafe.Appbizz
     {
         public ObservableCollection<Kunde> DataKunder;
         public ObservableCollection<Resevartion> DataResevartion;
-        public ObservableCollection<Spil> DataSpil;
-        //public BastardDB BastardDB = new BastardDB();
+        public ObservableCollection<Spil> DataSpil = new ObservableCollection<Spil>();
+        public BastardDB BastardDB = new BastardDB();
+        private Spil spil;
         public BastardCafeBizz()
         {
 
@@ -31,7 +32,9 @@ namespace BastardCafe.Appbizz
         }
         public void FillSpilData()
         {
-            DataTable DTSpil;
+            DataTable DTSpil = BastardDB.DTGetSpilData(true);
+            spil = new Spil(DTSpil);
+            DataSpil.Add(spil);
         }
     }
 }
