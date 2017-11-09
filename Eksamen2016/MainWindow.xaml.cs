@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using BastardCafe.Appbizz;
 
 namespace Eksamen2016
 {
@@ -20,6 +21,7 @@ namespace Eksamen2016
     /// </summary>
     public partial class MainWindow : Window
     {
+        public BastardCafeBizz bizz = new BastardCafeBizz();
         public UcMenu ucMenu = null;
         public UcOverviewRes ucOverviewRes = null;
         public UcOverviewKunder ucOverviewKunder = null;
@@ -28,7 +30,7 @@ namespace Eksamen2016
         public MainWindow()
         {
             InitializeComponent();
-            ucMenu = new UcMenu(ucCenter, ucRight);
+            ucMenu = new UcMenu(ucCenter, ucRight, bizz);
             this.ucLeft.Content = ucMenu;
         }
 

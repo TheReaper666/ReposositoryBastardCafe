@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using BastardCafe.Appbizz;
 
 namespace Eksamen2016
 {
@@ -20,11 +21,15 @@ namespace Eksamen2016
     /// </summary>
     public partial class UcOverviewSpil : UserControl
     {
+        public BastardCafeBizz Bizz;
         private UserControl ucRight;
-        public UcOverviewSpil(object ucr)
+        public UcOverviewSpil(object ucr, BastardCafeBizz bizz)
         {
+            Bizz = bizz;
             InitializeComponent();
+            //dataGridSpil.ItemsSource = bizz.DataSpil;
             ucRight = (UserControl)ucr;
+
         }
 
         private void TextBoxSøgeFeltSpil_TextChanged(object sender, TextChangedEventArgs e)
@@ -34,12 +39,12 @@ namespace Eksamen2016
 
         private void DataGridSpil_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            UcDetailsSpilOpret UCS = new UcDetailsSpilOpret(false, Bizz);
         }
 
         private void BtnOpretSpil_Click(object sender, RoutedEventArgs e)
         {
-
+            UcDetailsSpilOpret UCS = new UcDetailsSpilOpret(true, Bizz);
         }
     }
 }
