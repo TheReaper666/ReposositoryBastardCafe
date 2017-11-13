@@ -25,15 +25,16 @@ namespace Eksamen2016
         private UcOverviewRes ucOverviewRes;
         private UcOverviewKunder ucOverviewKunder;
         private UcOverviewSpil ucOverviewSpil;
-        private BastardCafeBizz f = new BastardCafeBizz();
-        public UcMenu(object ucc, object ucr)
+        private BastardCafeBizz Bizz;
+        public UcMenu(object ucc, object ucr, BastardCafeBizz bizz)
         {
             InitializeComponent();
+            Bizz = bizz;
             ucCenter = (UserControl)ucc;
             ucRight = (UserControl)ucr;
             ucOverviewRes = new UcOverviewRes(ucr);
             ucOverviewKunder = new UcOverviewKunder(ucr);
-            ucOverviewSpil = new UcOverviewSpil(ucr);
+            ucOverviewSpil = new UcOverviewSpil(ucr, Bizz);
         }
 
         private void BtnReservationer_Click(object sender, RoutedEventArgs e)
@@ -48,7 +49,7 @@ namespace Eksamen2016
 
         private void BtnSpil_Click(object sender, RoutedEventArgs e)
         {
-            f.FillSpilData();
+            Bizz.FillSpilData();
             ucCenter.Content = ucOverviewSpil;
         }
     }
