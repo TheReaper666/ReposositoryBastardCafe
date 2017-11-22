@@ -4,7 +4,6 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using BastardCafe.BizzEntities;
 
 
 namespace GeneralDB.IO
@@ -34,7 +33,7 @@ namespace GeneralDB.IO
             return DbReturnDataTable(SQLquery);
         }
 
-        public void DTUpdateKundeData(Kunde kunde) // VALIDERING FØR I KALDER DENNE METODE! NÆ
+        public void DTUpdateKundeData() // VALIDERING FØR I KALDER DENNE METODE! NÆ
         {
             string SQLquery = $"UPDATE Kunder SET FuldeNavn = '{kunde.FuldeNavn}', Adresse = '{kunde.Adresse}', Mobil = '{kunde.MobilNr}', Email = '{kunde.Email}', GamerNavn = '{kunde.GamerNavn}'";
         }

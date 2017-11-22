@@ -45,11 +45,5 @@
     <Compile Include="DatabaseFunktions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BastardCafe.BizzEntities\BastardCafe.BizzEntities.csproj">
-      <Project>{be543fae-e429-42a4-8ace-b431a511cfd9}</Project>
-      <Name>BastardCafe.BizzEntities</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
